@@ -1,0 +1,37 @@
+doctype html
+head
+    title YieldsApp chat  
+   
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet" href="https://www.atlasestateagents.co.uk/css/tether.min.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="../css/lightslider.css")
+    link(rel="stylesheet" href="../css/chat.css")
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js")
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")    
+    script(src="../js/lightslider.js")
+    script(src="../js/config.js")
+    script(src="../js/chatScript.js")
+
+
+body
+    div.chat-container
+        div.expanded
+           button.end
+                  &nbsp;סיום שיחה   
+                  i(class="fa fa-times-circle" aria-hidden="true")
+          
+        div#chat_area
+            div(id="chat" class="chat_message_container")
+             div.typing-indicator
+               span
+               span
+               span
+            div(class="textarea_container_placeholder")
+            div(class="textarea_container")
+                textarea(id="message" class="message" placeholder="שלח הודעה" disabled="disabled")
+                button#sendButton(disabled=true)
+        
